@@ -33,7 +33,7 @@ public class Stepdefs {
     }
 
     @When("i delete the name {string}")
-    public void i_delete_the_name(String string) {
+    public void i_delete_the_name(String toolname) {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
