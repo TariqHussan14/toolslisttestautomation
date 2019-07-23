@@ -16,7 +16,9 @@ public class TestDog {
         wolfy.setSkin("pink");
         scooby.setSkin("Yellow");
 
+        System.out.println("scooby's skin is " + scooby.getskin());
 
+        liver.bark();
 
     }
 
