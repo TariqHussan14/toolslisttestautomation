@@ -14,4 +14,10 @@ public class Toolspage {
     ToolPageLocators locators = new ToolPageLocators();
 
 
+    public String checkforLoginSuccessfulMessage(){
+
+      return driver.findElement(locators.getSuccessfulLoginMesage()).getText();
+    }
+
 }
+
