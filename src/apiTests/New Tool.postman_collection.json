@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "81fa0806-9756-4a6b-ac1f-461a072c4efd",
+		"name": "New Tool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://toolslist.safebear.co.uk:8080/tools",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f9e0b02b-908e-435c-8913-f41441c070bc",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"var namefield = pm.environment.get(\"name\");",
+							"",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(namefield);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-length",
+						"value": "56"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "cookie",
+						"value": "__tawkuuid=e::safebear.co.uk::yu8jv/kQfMx6+i7V/L3W56G2+6AyfvWEM18gQmMrq5Zh+Ae3Cfp8kP4XtyrEPEvg::2; JSESSIONID=EABE506662872190B9F86856630CAAC4"
+					},
+					{
+						"key": "host",
+						"value": "toolslist.safebear.co.uk:8080"
+					},
+					{
+						"key": "origin",
+						"value": "http://toolslist.safebear.co.uk:8080"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "proxy-connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "referer",
+						"value": "http://toolslist.safebear.co.uk:8080/jsp/new-tool.jsp?"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "action=add&idTool=&name=fdscf&use=fcdf+&website=vfdvfdvc"
+				},
+				"url": {
+					"raw": "http://toolslist.safebear.co.uk:8080/tools",
+					"protocol": "http",
+					"host": [
+						"toolslist",
+						"safebear",
+						"co",
+						"uk"
+					],
+					"port": "8080",
+					"path": [
+						"tools"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
