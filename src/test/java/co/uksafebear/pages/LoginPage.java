@@ -30,7 +30,7 @@ public class LoginPage {
 
     public void enterPassword(String password){
 
-        driver.findElement(locators.getPasswordLocator()).sendKeys();
+        driver.findElement(locators.getPasswordLocator()).sendKeys(password);
     }
 
     public void clickloginButton(){

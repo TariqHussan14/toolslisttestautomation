@@ -11,7 +11,7 @@ Feature: Delete Tool
   *User: someone who wants to delete a Tools list using our application
   *
 
-
+@to-do
   @high-impact
   Scenario Outline: a valid user is able to delete a tool
     Given I am logged in,

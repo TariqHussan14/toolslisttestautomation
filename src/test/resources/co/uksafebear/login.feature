@@ -21,7 +21,7 @@ Feature: Login
       |username|password|
       |tester |letmein|
       |tester1|letmein|
-      |Tester2|letmein|
+      |tester2|letmein|
 
     @to-do
     Scenario: an invalid user attempts to log in
